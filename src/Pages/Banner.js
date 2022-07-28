@@ -3,7 +3,7 @@ import banner from '../images/banner.png';
 
 const Banner = () => {
     return (
-<div class="carousel w-full py-12">
+<div class="carousel w-full py-12 ">
   <div id="slide1" class="carousel-item relative w-full">
     <img src={banner} alt='banner' class="rounded-box" />
     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

@@ -1,72 +1,49 @@
 import React from 'react';
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import {faChartLine, faClapperboard, faGripLines, faHouse, faLayerGroup} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+
 
 
 const Navbar = () => {
     return (
-        // <div className='grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-5 grid-cols-5'>
-        //    <div className='flex items-stretch'>
-        //    <div className='text-[#8C8787] hover:text-white'>
-        //         <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
-        //         <li className='list-none'><a>Home</a></li>
-        //     </div>
-        //     <div className='text-[#8C8787] hover:text-white'>
-        //         <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
-        //         <li className='list-none'><a>Home</a></li>
-        //     </div>
-        //     <div className='text-[#8C8787] hover:text-white'>
-        //         <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
-        //         <li className='list-none'><a>Home</a></li>
-        //     </div>
-        //     <div className='text-[#8C8787] hover:text-white'>
-        //         <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
-        //         <li className='list-none'><a>Home</a></li>
-        //     </div>
-        //     <div className='text-[#8C8787] hover:text-white'>
-        //         <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
-        //         <li className='list-none'><a>Home</a></li>
-        //     </div>
-        //    </div>
-           
-    
-
-        // </div>
-
-
-
-
-        <div class="navbar text-white">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-      <li>
+<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+<ul className='flex space-x-36 justify-center py-12'>
+    <li className='text-[#8C8787] hover:text-white cursor-pointer'>
         <a>
       <FontAwesomeIcon className='text-2xl' icon={faHouse}></FontAwesomeIcon>
       <span className='block'>Home</span>
       </a>
 </li>
-      </ul>
-    </div>
-   
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal p-0">
-    <li>
+    <li className='text-[#8C8787] hover:text-white cursor-pointer'>
         <a>
-      <FontAwesomeIcon className='text-2xl' icon={faHouse}></FontAwesomeIcon>
-      <span className='block'>Home</span>
+      <FontAwesomeIcon className='text-2xl' icon={faChartLine}></FontAwesomeIcon>
+      <span className='block'>Exclusive</span>
       </a>
 </li>
-        <li><a>Exclusive</a></li>
+    <li className='text-[#8C8787] hover:text-white cursor-pointer'>
+        <a>
+      <FontAwesomeIcon className='text-2xl' icon={faClapperboard}></FontAwesomeIcon>
+      <span className='block'>Coming Soon</span>
+      </a>
+</li>
+    <li className='text-[#8C8787] hover:text-white cursor-pointer'>
+        <a>
+      <FontAwesomeIcon className='text-2xl' icon={faLayerGroup}></FontAwesomeIcon>
+      <span className='block'>Packages</span>
+      </a>
+</li>
+    <li className='text-[#8C8787] hover:text-white cursor-pointer'>
+        <a>
+      <FontAwesomeIcon className='text-2xl' icon={faGripLines}></FontAwesomeIcon>
+      <span className='block'>More</span>
+      </a>
+</li>
+
     </ul>
-  </div>
-  
+    <div className="border-b-4 border-white w-72 mx-auto"></div>
 </div>
+
+
     );
 };
 
